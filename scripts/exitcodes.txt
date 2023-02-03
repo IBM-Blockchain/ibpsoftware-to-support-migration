@@ -1,0 +1,41 @@
+### exit codes and meanings ### 
+
+101 - check.sh failed on checking operator.
+102 - check.sh failed on checking console.
+103 - check.sh failed on checking CA, peer, or orderer fabric versions.
+
+201 - migrate.sh failed on backup.
+202 - migrate.sh failed on scaling down IBP operator.
+203 - migrate.sh failed on scaling down IBP webhook.
+
+211 - migrate.sh failed on creating new image pull secret.
+212 - migrate.sh failed on inspecting registry credentials.
+
+221 - migrate.sh failed on updating scc in operator namespace.
+
+231 - migrate.sh failed on bringing up new crd-webhook deployment.
+
+241 - migrate.sh failed on converting crds to v1.
+242 - migrate.sh failed on updating rbac.
+
+251 - migrate.sh failed on creating new ibm-hlfsupport operator.
+
+261 - migrate.sh failed on migrating console.
+262 - migrate.sh failed on migrating ca.
+263 - migrate.sh failed on migrating orderer.
+264 - migrate.sh failed on migrating peer.
+
+271 - migrate.sh failed on updating annotation labels.
+
+281 - migrate.sh failed on scaling up new ibm-hlfsupport operator.
+
+301 - verify.sh failed to verify component deployments
+302 - verify.sh failed to verify console
+303 - verify.sh failed to verify peer
+304 - verify.sh failed to verify ca
+305 - verify.sh failed to verify orderer
+
+500 - missing one or more environment variables.
+501 - invalid environment variable value.
+600 - error in cluster verification.
+601 - jq not installed.

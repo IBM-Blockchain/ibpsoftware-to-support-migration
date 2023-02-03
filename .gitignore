@@ -1,0 +1,6 @@
+./scripts/migrate-components/backups
+.env
+.DS_Store
+notes.txt
+backups
+.DS_Store
