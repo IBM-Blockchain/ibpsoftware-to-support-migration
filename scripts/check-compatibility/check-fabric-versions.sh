@@ -37,7 +37,7 @@ fi
 MIN_FABRIC_VERSION=2.2.9
 MIN_FABRIC_CA_VERSION=1.5.5
 
-minPeerOrdererFabricVersion="[2-9]\.(2\.[8-9])|([4-9]\.[4-9])|[3-9]\.[0-9]\.[3-9]" # 2.2.9+
+minPeerOrdererFabricVersion="[2-9]\.(2\.(9|1[0-5]))|([4-9]\.[4-9])|[3-9]\.[0-9]\.[3-9]" # 2.2.9+
 minCAFabricVersion="[1-9]\.[5-9]\.[5-9]|[2-9]\.[0-9]\.[0-9]" # 1.5.5+
 
 debug "Checking peer fabric versions."
