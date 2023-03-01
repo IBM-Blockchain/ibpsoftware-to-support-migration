@@ -45,6 +45,7 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2022 Dec 07|2.5.3-20221207|
 |2023 Jan 04|2.5.3-20230104|
 |2023 Jan 31|2.5.3-20230131|
+|2023 Feb 28|2.5.3-20230228|
 
 
 #### IBP Console
@@ -54,6 +55,7 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2022 Dec 07|2.5.3-20221207|
 |2023 Jan 04|2.5.3-20230104|
 |2023 Jan 31|2.5.3-20230131|
+|2023 Feb 28|2.5.3-20230228|
 
 #### IBP CA
 
@@ -62,6 +64,7 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2022 Dec 07|1.5.5-20221207|
 |2023 Jan 04|1.5.5-20230104|
 |2023 Jan 31|1.5.5-20230131|
+|2023 Feb 28|1.5.5-20230228|
 
 #### IBP Orderer
 
@@ -73,6 +76,8 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 04|2.4.7-20230104|
 |2023 Jan 31|2.2.9-20230131|
 |2023 Jan 31|2.4.7-20230131|
+|2023 Feb 28|2.2.10-20230228|
+|2023 Feb 28|2.4.8-20230228|
 
 #### IBP Peer
 
@@ -84,6 +89,8 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 04|2.4.7-20230104|
 |2023 Jan 31|2.2.9-20230131|
 |2023 Jan 31|2.4.7-20230131|
+|2023 Feb 28|2.2.10-20230228|
+|2023 Feb 28|2.4.8-20230228|
 
 
 ## Export environment variables
