@@ -34,7 +34,7 @@ Make sure you are pointing to the correct cluster where your network resides bef
 
 ### Compatible images
 
-Your IBM Blockchain Software 2.5.3 components must be using compatible images in order to migrate to IBM Support for Hyperledger Fabric. The tables below show compatible image tags for each component.
+Your IBM Blockchain Software 2.5.3 and 2.5.4 components must be using compatible images in order to migrate to IBM Support for Hyperledger Fabric. The tables below show compatible image tags for each component.
 
 **Attention:** The migration scripts are not compatible with any non-standard deployment - [open a support ticket](https://www.ibm.com/mysupport) for help with a non-standard migration.
 
@@ -46,6 +46,7 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 04|2.5.3-20230104|
 |2023 Jan 31|2.5.3-20230131|
 |2023 Feb 28|2.5.3-20230228|
+|2023 Mar 22|2.5.4-20230322|
 
 
 #### IBP Console
@@ -56,6 +57,7 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 04|2.5.3-20230104|
 |2023 Jan 31|2.5.3-20230131|
 |2023 Feb 28|2.5.3-20230228|
+|2023 Mar 22|2.5.4-20230322|
 
 #### IBP CA
 
@@ -65,6 +67,7 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 04|1.5.5-20230104|
 |2023 Jan 31|1.5.5-20230131|
 |2023 Feb 28|1.5.5-20230228|
+|2023 Mar 22|1.5.5-20230322|
 
 #### IBP Orderer
 
@@ -78,6 +81,8 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 31|2.4.7-20230131|
 |2023 Feb 28|2.2.10-20230228|
 |2023 Feb 28|2.4.8-20230228|
+|2023 Mar 22|2.2.10-20230322|
+|2023 Mar 22|2.4.8-20230322|
 
 #### IBP Peer
 
@@ -89,8 +94,8 @@ Your IBM Blockchain Software 2.5.3 components must be using compatible images in
 |2023 Jan 04|2.4.7-20230104|
 |2023 Jan 31|2.2.9-20230131|
 |2023 Jan 31|2.4.7-20230131|
-|2023 Feb 28|2.2.10-20230228|
-|2023 Feb 28|2.4.8-20230228|
+|2023 Mar 22|2.2.10-20230322|
+|2023 Mar 22|2.4.8-20230322|
 
 
 ## Export environment variables
@@ -154,7 +159,7 @@ To verify that your network is compatible for migration, invoke the **scripts/ch
 
 ## Usage
 
-Migrate your IBM Blockchain Software 2.5.3 components to IBM Support for Hyperledger Fabric by invoking the **scripts/sw-to-support.sh** script:
+Migrate your IBM Blockchain Software 2.5.3 and 2.5.4 components to IBM Support for Hyperledger Fabric by invoking the **scripts/sw-to-support.sh** script:
 
 **Usage:** `./scripts/sw-to-support.sh`
 **Parameters:** none
@@ -169,4 +174,4 @@ If necessary, use the following documentation to prepare your network for migrat
   * For Openshift clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=platform-upgrading-your-deployment)
   * For Kubernetes clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=kubernetes-upgrading-your-console-components)
 
-#### Version of migration scripts = 1.0.1
+#### Version of migration scripts = 1.0.2
