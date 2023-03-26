@@ -20,7 +20,7 @@
 
 ###
 export PRODUCT_VERSION=1.0
-export RELEASE_VERSION=1.0.4
+export RELEASE_VERSION=1.0.5
 
 
 
@@ -47,6 +47,11 @@ if [[ $? -ne 0 ]]; then
    OS_ARCH="s390x"
 fi
 
+IBP_PRODUCT_VERSION="2.5.3"
+kubectl get deploy -n $NAMESPACE ${OPERATOR_NAME}  -o yaml  | grep "image: " | grep ibp-operator | grep -q ${IBP_PRODUCT_VERSION}
+if [[ $? -eq 0 ]]; then
+  export RELEASE_VERSION="1.0.4"
+fi
 CLUSTER_TYPE=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME}  -o yaml | grep -A1 "name: CLUSTERTYPE" | tail -1 | awk '{print $2}')
 
 IMAGEDATE=$(kubectl get deploy  -n $NAMESPACE ${OPERATOR_NAME} -o yaml | grep "image: " | grep ibp-operator | awk '{print $2}' |  awk -F":" '{print $2}' | awk -F"-" '{print $2}')

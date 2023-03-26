@@ -2,7 +2,7 @@
 
 **Attention: Due to functional overlap, all customers currently running an IBM Blockchain Platform (IBP) software installation must migrate their networks to IBM Support for Hyperledger Fabric by April 30, 2023. Use this README document to set up and complete this migration.**
 
-IBM Support for Hyperledger Fabric provides certified images of Hyperledger Fabric open source code, accelerators, and IBM support. This README document describes how to complete the migration, which will have **no impact on your existing data or blockchain network functionality**. General migration notices are available at https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=how-migrating-support-hyperledger-fabric.
+IBM Support for Hyperledger Fabric provides certified images of Hyperledger Fabric open source code, accelerators, and IBM support. This README document describes how to complete the migration, which will have **no impact on your existing data or blockchain network functionality**. General migration notices are available at https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=how-migrating-support-hyperledger-fabric and https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=how-migrating-support-hyperledger-fabric.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Make sure you are pointing to the correct cluster where your network resides bef
 
 ### Compatible images
 
-Your IBM Blockchain Software 2.5.3 and 2.5.4 components must be using compatible images in order to migrate to IBM Support for Hyperledger Fabric. The tables below show compatible image tags for each component.
+Your IBM Blockchain Software 2.5.3 OR 2.5.4 components must be using compatible images in order to migrate to IBM Support for Hyperledger Fabric. The tables below show compatible image tags for each component.
 
 **Attention:** The migration scripts are not compatible with any non-standard deployment - [open a support ticket](https://www.ibm.com/mysupport) for help with a non-standard migration.
 
@@ -168,10 +168,16 @@ Migrate your IBM Blockchain Software 2.5.3 and 2.5.4 components to IBM Support f
 
 If necessary, use the following documentation to prepare your network for migration:
 
-* For the latest IBM Blockchain Platform (IBP) releases and fixpacks, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=help-release-notes).
+* For the latest IBM Blockchain Platform (IBP) 2.5.3 releases and fixpacks, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=help-release-notes).
+* For the latest IBM Blockchain Platform (IBP) 2.5.4 releases and fixpacks, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=help-release-notes).
 * For instructions on how to upgrade your IBP version 2.5.3 network to the latest fixpack, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=kubernetes-installing-253-fix-pack).
+* For instructions on how to upgrade your IBP version 2.5.4 network to the latest fixpack, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=kubernetes-installing-254-fix-pack).
 * For instructions on how to migrate your IBP instance from an older version to 2.5.3:
   * For Openshift clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=platform-upgrading-your-deployment)
   * For Kubernetes clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=kubernetes-upgrading-your-console-components)
+
+* For instructions on how to migrate your IBP instance from an older version to 2.5.4:
+  * For Openshift clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=platform-upgrading-your-deployment)
+  * For Kubernetes clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=kubernetes-upgrading-your-console-components)
 
 #### Version of migration scripts = 1.0.2
