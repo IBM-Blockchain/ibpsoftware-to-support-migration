@@ -175,7 +175,6 @@ If necessary, use the following documentation to prepare your network for migrat
 * For instructions on how to migrate your IBP instance from an older version to 2.5.3:
   * For Openshift clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=platform-upgrading-your-deployment)
   * For Kubernetes clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=kubernetes-upgrading-your-console-components)
-
 * For instructions on how to migrate your IBP instance from an older version to 2.5.4:
   * For Openshift clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=platform-upgrading-your-deployment)
   * For Kubernetes clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=kubernetes-upgrading-your-console-components)
