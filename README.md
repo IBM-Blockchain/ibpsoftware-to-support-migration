@@ -47,6 +47,7 @@ Your IBM Blockchain Software 2.5.3 OR 2.5.4 components must be using compatible 
 |2023 Jan 31|2.5.3-20230131|
 |2023 Feb 28|2.5.3-20230228|
 |2023 Mar 22|2.5.4-20230322|
+|2023 Apr 18|2.5.4-20230418|
 
 
 #### IBP Console
@@ -58,6 +59,7 @@ Your IBM Blockchain Software 2.5.3 OR 2.5.4 components must be using compatible 
 |2023 Jan 31|2.5.3-20230131|
 |2023 Feb 28|2.5.3-20230228|
 |2023 Mar 22|2.5.4-20230322|
+|2023 Apr 18|2.5.4-20230418|
 
 #### IBP CA
 
@@ -68,6 +70,7 @@ Your IBM Blockchain Software 2.5.3 OR 2.5.4 components must be using compatible 
 |2023 Jan 31|1.5.5-20230131|
 |2023 Feb 28|1.5.5-20230228|
 |2023 Mar 22|1.5.5-20230322|
+|2023 Apr 18|1.5.5-20230418|
 
 #### IBP Orderer
 
@@ -83,6 +86,8 @@ Your IBM Blockchain Software 2.5.3 OR 2.5.4 components must be using compatible 
 |2023 Feb 28|2.4.8-20230228|
 |2023 Mar 22|2.2.10-20230322|
 |2023 Mar 22|2.4.8-20230322|
+|2023 Apr 18|2.2.10-20230418|
+|2023 Apr 18|2.4.8-20230418|
 
 #### IBP Peer
 
@@ -96,6 +101,8 @@ Your IBM Blockchain Software 2.5.3 OR 2.5.4 components must be using compatible 
 |2023 Jan 31|2.4.7-20230131|
 |2023 Mar 22|2.2.10-20230322|
 |2023 Mar 22|2.4.8-20230322|
+|2023 Apr 18|2.2.10-20230418|
+|2023 Apr 18|2.4.8-20230418|
 
 
 ## Export environment variables
@@ -179,4 +186,4 @@ If necessary, use the following documentation to prepare your network for migrat
   * For Openshift clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=platform-upgrading-your-deployment)
   * For Kubernetes clusters, click [here](https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=kubernetes-upgrading-your-console-components)
 
-#### Version of migration scripts = 1.0.2
+#### Version of migration scripts = 1.0.3
