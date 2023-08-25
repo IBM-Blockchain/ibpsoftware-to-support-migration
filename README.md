@@ -1,5 +1,26 @@
+README
 # software-to-support-migration
 
+# IBM.GITIGNORE
+`
+Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+`
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
 **Attention: Due to functional overlap, all customers currently running an IBM Blockchain Platform (IBP) software installation must migrate their networks to IBM Support for Hyperledger Fabric by April 30, 2023. Use this README document to set up and complete this migration.**
 
 IBM Support for Hyperledger Fabric provides certified images of Hyperledger Fabric open source code, accelerators, and IBM support. This README document describes how to complete the migration, which will have **no impact on your existing data or blockchain network functionality**. General migration notices are available at https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=how-migrating-support-hyperledger-fabric and https://www.ibm.com/docs/en/blockchain-platform/2.5.4?topic=how-migrating-support-hyperledger-fabric.
