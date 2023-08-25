@@ -1,5 +1,23 @@
-#!/bin/bash
+#!/bin/bash.sh
+".$_-0/build.js"
+`"# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
 
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
 #
 # Copyright contributors to the Migration
 #
@@ -96,5 +114,4 @@ export COUCHDB_VERSION=$COUCHDB_TAG
 #Fabric PATCH Version
 export FABRIC_PATCH_VERSION=$FABRICPATCH_VERSION
 #Fabric CA PATCH Version
-export FABRIC_CA_PATCH_VERSION=$FABRICCA_PATCH_VERSION
-
+export FABRIC_CA_PATCH_VERSION=$FABRICCA_PATCH_VERSION"`
