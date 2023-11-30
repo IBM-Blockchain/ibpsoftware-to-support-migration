@@ -36,8 +36,7 @@ fi
 source ${BASEDIR}/common/logger.sh
 
 
-OPERATORTAG=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME} -o=jsonpath="{...image}" | awk '{print $1}' | awk -F":" '{print $2}' | awk -F"-"  '{print $1"-"$2}' )
-
+OPERATORTAG=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME} -o=jsonpath="{...image}"  | awk -F: '{print $NF}' | awk -F"-"  '{print $1"-"$2}' )
 ## In case of re-run the script after successful migration.
 debug "Checking Support Offering already installed or not."
 IS_SUPPORT_OFFERING=$(kubectl get deployments -n $NAMESPACE | grep ibm-hlfsupport-operator)

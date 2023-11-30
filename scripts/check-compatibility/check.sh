@@ -27,7 +27,7 @@ if [ "$?" != "0" ]; then
     exit 1
 fi
 
-OPERATORTAG=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME} -o=jsonpath="{...image}" | awk '{print $1}' | awk -F":" '{print $2}' | awk -F"-"  '{print $1}' )
+OPERATORTAG=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME} -o=jsonpath="{...image}" | awk -F: '{print $NF}' | awk -F"-"  '{print $1"-"$2}' )
 ISVALIDVERSION=$(cat $BASEDIR/compatible-versions/operator.txt | grep $OPERATORTAG)
 DOC_URL="https://www.ibm.com/docs/en/blockchain-platform/2.5.3?topic=kubernetes-upgrading-your-console-components"
 if [[ ! -z "$ISVALIDVERSION" ]]; then
