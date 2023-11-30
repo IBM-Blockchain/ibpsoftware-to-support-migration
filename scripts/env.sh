@@ -54,7 +54,8 @@ if [[ $? -eq 0 ]]; then
 fi
 CLUSTER_TYPE=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME}  -o yaml | grep -A1 "name: CLUSTERTYPE" | tail -1 | awk '{print $2}')
 
-IMAGEDATE=$(kubectl get deploy  -n $NAMESPACE ${OPERATOR_NAME} -o yaml | grep "image: " | grep ibp-operator | awk '{print $2}' |  awk -F":" '{print $2}' | awk -F"-" '{print $2}')
+IMAGEDATE=$(kubectl get deployment -n $NAMESPACE ${OPERATOR_NAME} -o=jsonpath="{...image}" | awk -F: '{print $NF}' | awk -F"-"  '{print $2}')
+
 
 IBP_PEERS=$(kubectl get ibppeer -n $NAMESPACE --no-headers | awk '{print $1}')
 for ibp_peer in $IBP_PEERS; do
