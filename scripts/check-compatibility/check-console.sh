@@ -43,8 +43,8 @@ if [ -z "$ISVALIDCONSOLENAME" ]; then
 fi
 
 for image in $(kubectl get deployment ${CONSOLE_NAME} -n $NAMESPACE -o=jsonpath="{...image}"); do
-    imageName=$(echo $image | awk -F":" '{print $1}' | awk -F"/" '{print $3}')
-    imageTag=$(echo $image | awk -F":" '{print $2}'| awk -F"-"  '{print $1"-"$2}')
+    imageName=$(echo $image | awk -F"/" '{print $NF}' | awk -F":" '{print $1}')
+    imageTag=$(echo $image | awk -F: '{print $NF}' | awk -F"-"  '{print $1"-"$2}')
     if [ $imageName = "ibp-console" ]; then
         CONSOLETAG=$imageTag
         ISVALIDVERSION=$(cat $BASEDIR/check-compatibility/compatible-versions/console.txt | grep $CONSOLETAG)
